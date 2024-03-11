@@ -7,6 +7,7 @@ Open-CD is an open source change detection toolbox based on a series of open sou
 
 
 ## News
+- 2/10/2024 - Open-CD is upgraded to v1.1.0. [BAN](https://github.com/likyoo/BAN), [TTP](https://github.com/KyanChen/TTP) and [LightCDNet](https://github.com/NightSongs/LightCDNet) is supported. The inference API is added.
 - 4/21/2023 - Open-CD v1.0.0 is released in 1.x branch, based on OpenMMLab 2.0 ! PyTorch 2.0 is also supported ! Enjoy it !
 - 3/14/2023 - Open-CD is upgraded to v0.0.3. Semantic Change Detection (SCD) is supported !
 - 11/17/2022 - Open-CD is upgraded to v0.0.2, requiring a higher version of the MMSegmentation dependency.
@@ -38,7 +39,7 @@ Supported change detection model:
 - [x] [HANet (JSTARS'2023)](configs/hanet)
 - [x] [TinyCDv2 (Under Review)](configs/tinycd_v2)
 - [x] [LightCDNet (GRSL'2023)](configs/lightcdnet)
-- [x] [BAN (arXiv'2023)](configs/ban)
+- [x] [BAN (TGRS'2024)](configs/ban)
 - [x] [TTP (arXiv'2023)](configs/ttp)
 - [ ] ...
 
@@ -95,12 +96,16 @@ python tools/test.py configs/changer/changer_ex_r18_512x512_40k_levircd.py chang
 If you find this project useful in your research, please consider cite:
 
 ```bibtex
-@article{li2023new,
-      title={A New Learning Paradigm for Foundation Model-based Remote Sensing Change Detection}, 
-      author={Li, Kaiyu and Cao, Xiangyong and Meng, Deyu},
-      journal={arXiv preprint arXiv:2312.01163},
-      year={2023}
-}
+@ARTICLE{10438490,
+  author={Li, Kaiyu and Cao, Xiangyong and Meng, Deyu},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={A New Learning Paradigm for Foundation Model-based Remote Sensing Change Detection}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Adaptation models;Task analysis;Data models;Computational modeling;Feature extraction;Transformers;Tuning;Change detection;foundation model;visual tuning;remote sensing image processing;deep learning},
+  doi={10.1109/TGRS.2024.3365825}}
 
 @ARTICLE{10129139,
   author={Fang, Sheng and Li, Kaiyu and Li, Zhe},
