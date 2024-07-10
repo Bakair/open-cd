@@ -2,3 +2,4 @@ mmcv>=2.0.0rc4,<2.1.0
 mmseg>=1.0.0rc6
 mmdet>=3.0.0rc6
 mmengine>=0.6.0
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
